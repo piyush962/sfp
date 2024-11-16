@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Email</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">     
+</head>
+<body style="margin: 0;">
+	<div style="width: 100%; background-image: url(https://sfp.laraveldevelopmentcompany.com/img/emailbg.png); background-repeat: no-repeat;background-position: top center; background-color: #f4f4f4;padding:0 0;font-family: Verdana,Geneva,sans-serif;">		 
+    <div style="max-width: 600px;margin: auto;">
+			<!-- top part -->
+			<div>
+				<div style="padding: 2.8em 0 10.5em;">
+				    <table cellpadding="0" cellspacing="0" width="100%" border="0">
+				    	<tr>
+				    		<td valign="middle" width="100%" style="text-align: center;vertical-align: middle;">
+				    			<img src="https://sfp.laraveldevelopmentcompany.com/img/logo.png" alt="logo" style="max-width:100%;">
+				    		</td>
+				    	</tr>
+				    </table> 
+				</div>
+				<div style="background: #fff;padding: 0 0 1.2em;">
+					<div style="padding: 3.1em 0 2.9em;max-width: 580px;margin: auto;text-align: center;">
+						<p style="color: #000000;text-align: center;margin: 0 0 1.8rem;line-height: 1.2em;font-family: Verdana,Geneva,sans-serif;font-size: 24px; font-weight: 700; line-height: 28.8px; text-align: center;">{headmsg}</p>
+						<p style="font-weight:400;color: #2b2e46; font-size: 16px; font-weight: 400; line-height: 23px; margin: 0 auto .8em;max-width: 480px;">{name} </p>
+						<p style="font-weight:400;color: #2b2e46; font-size: 16px; font-weight: 400; line-height: 23px; margin: 0 auto .8em;max-width: 480px;">{title}</p>  
+						<p style="font-weight:400;color: #2b2e46; font-size: 16px; font-weight: 400; line-height: 23px;  margin: 0 auto 0em;max-width: 480px;">Please find below the details of your order:</p>
+					</div> 
+					<div style="padding:1.8em 0 1.7em;max-width: 480px;margin: auto;text-align: center;border-bottom: 1px solid #dfdfdf;border-top: 1px solid #dfdfdf;display: table;width: 100%;"> 
+						<div style="width: 50%; float: left; font-family: Verdana,Geneva,sans-serif;font-size: 14px; font-weight: 400; line-height: 15.6px; text-align: center;">
+							Order ID
+							<p style="font-family: Verdana,Geneva,sans-serif;font-size: 17px; font-weight: 600; line-height: 20.4px; text-align: center; margin: 10px 0;">{order_id}</p>
+						</div>		 
+						<div style="width: 50%; float: left; font-family: Verdana,Geneva,sans-serif;font-size: 14px; font-weight: 400; line-height: 15.6px; text-align: center;">
+							Order Date
+							<p style="font-family: Verdana,Geneva,sans-serif;font-size: 17px; font-weight: 600; line-height: 20.4px; text-align: center; margin: 10px 0;">{order_date}</p>
+						</div>
+					</div>
+					<div style="padding:1.8em 0 1.7em;max-width: 480px;margin: auto;text-align: center;border-bottom: 1px solid #dfdfdf;"> 
+						<p style="font-weight:400;color: #2b2e46;font-size: 18px;margin: 0 0 .5em;line-height: 1em;letter-spacing: 0.01em;">Expected Delivery Date</p>
+						<p style="font-weight:700;color: #8465FE;font-size: 2.6em;margin: 0;line-height: 1.3em;letter-spacing: 0.01em; ">{order_deadline}</p>					 
+					</div> 
+					<div style="padding:1.8em 0 1.7em;max-width: 480px;margin: auto;text-align: left;border-bottom: 1px solid #dfdfdf;">
+						<p style="font-weight:400;color: #2b2e46;font-size: 18px;margin: 0 0 1.5em;line-height: 1em;letter-spacing: 0.01em;">
+							Here is a summary of your order:</p>
+						<div style="display: table;width: 100%;">
+							<div style="width: 40%;float: left;">
+								<p style="margin: 5px 0;color: #2b2e46; font-size: 16px; font-weight: 500; line-height: 23px;">Product Name:</p>
+							</div>
+							<div style="width: 60%;float: left;">
+								<p style="margin: 5px 0;color: #2b2e46; font-size: 16px; font-weight: 400; line-height: 23px;">{product_name}</p>
+							</div>
+						</div>
+						<div style="display: table;width: 100%;">
+							<div style="width: 40%;float: left;">
+								<p style="margin: 5px 0;color: #2b2e46; font-size: 16px; font-weight: 500; line-height: 23px;">Quantity:</p>
+							</div>
+							<div style="width: 60%;float: left;">
+								<p style="margin: 5px 0;color: #2b2e46; font-size: 16px; font-weight: 400; line-height: 23px;">{quantity}</p>
+							</div>
+						</div>
+						<div style="display: table;width: 100%;">
+							<div style="width: 40%;float: left;">
+								<p style="margin: 5px 0;color: #2b2e46; font-size: 16px; font-weight: 500; line-height: 23px;">Address:</p>
+							</div>
+							<div style="width: 60%;float: left;">
+								<p style="margin: 5px 0;color: #2b2e46; font-size: 16px; font-weight: 400; line-height: 23px;">Jaipur, Rajsthan</p>
+							</div>
+						</div>
+					</div>
+					<div style="padding:2.2em 0 0;width: 100%; margin: auto;text-align: center;"> 
+						<p style="color: #2b2e46; font-size: 16px; font-weight: 400; line-height: 23px; margin: 0 auto .8em;max-width: 500px;">If you have any questions or need further assistance regarding your order, feel free to contact our customer support
+						team at {supporting_mail} or by replying to this email.</p>				
+					</div>
+					<div style="padding:2em 0 0;width: 100%;margin: auto;text-align: center;">
+						<p style="color: #2b2e46; font-size: 16px; font-weight: 400; line-height: 23px; margin: 0 auto .8em;max-width: 500px;">Thank you for choosing us for your purchase. We truly appreciate your business!</p>
+					</div>
+					<div style="padding:3em 0 0;width: 100%;margin: auto;text-align: left;max-width: 480px;font-size: 16px;line-height: 23px;color: #7f7f7f;">
+						Our Best,
+						<p style="color: #7f7f7f;  font-weight: bold;  margin: 0 auto 0;">SFP</p>
+					</div>
+				</div>				
+			</div>
+			<!-- footer -->
+			<div style="text-align:center;padding: 20px 0;background-color: #8465FE;">
+				<p style="font-size:.9em;color:#fff;line-height: 1.5em;font-weight: 400;margin: 0 auto 0;max-width: 560px;padding: 0 0px;letter-spacing: 0.03em;">© 2024 SFP.</p>
+			</div>
+
+		</div>
+	</div>
+</body>
+</html>
